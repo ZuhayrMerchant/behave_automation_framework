@@ -4,7 +4,7 @@ A lightweight and scalable test automation framework built using **Python**, **S
 
 ---
 
-## 📁 Folder Structure (Auto-Created by `setup_framework.py`) <br>
+## 📁 Folder Structure (Auto-Created by `framework_setup.py`) <br>
 ├── config/ <br>
 │    └── config.ini <br>
 ├── features/ <br>
@@ -33,7 +33,7 @@ A lightweight and scalable test automation framework built using **Python**, **S
 ### Step 1: Clone the Repository
 
 ```bash
-git clone (https://github.com/ZuhayrMerchant/behave_automation_framework.git)
+git clone https://github.com/ZuhayrMerchant/behave_automation_framework.git
 ```
 
 
