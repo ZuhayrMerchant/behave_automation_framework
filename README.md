@@ -102,6 +102,9 @@ Supported browsers: chrome, firefox, edge (you must install the correct driver m
 | `behave: command not found` | Try using `python -m behave` or reinstall with `pip install behave`       |
 | Browser doesn't open        | Check ChromeDriver or geckodriver path & version compatibility            |
 
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ZuhayrMerchant/behave_automation_framework/blob/main/LICENSE) file for details.
+
 ## 👤 Author
 Muhammad Zuhair <br>
 📧 zuhair96merchant@gmail.com <br>
