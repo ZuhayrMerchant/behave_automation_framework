@@ -1,0 +1,8 @@
+selenium
+behave
+allure-behave
+allure-pytest
+allure-python-commons
+pytest-html
+faker
+pandas
