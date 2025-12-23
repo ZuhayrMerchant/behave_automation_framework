@@ -18,7 +18,7 @@ A lightweight and scalable test automation framework built using **Python**, **S
 │    └── testdata.csv <br>
 ├── reports/ <br>
 |    └── logs <br>
-|          └── logfile.txt
+|          └── logfile.txt <br>
 |    └── screenshots <br>
 ├── utils/ <br>
 │    └── actions.py <br>
