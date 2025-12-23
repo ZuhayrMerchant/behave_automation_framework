@@ -6,21 +6,25 @@ A lightweight and scalable test automation framework built using **Python**, **S
 
 ## 📁 Folder Structure (Auto-Created by `framework_setup.py`) <br>
 ├── config/ <br>
-│    └── config.ini <br>
+│    └── config.yaml <br>
 ├── features/ <br>
 │    └── environment.py <br>
 │    └── test.feature <br>
 │    └── steps/ <br>
 │          └── test_step.py <br>
 ├── pages/ <br>
-│    └── testPage.py <br>
+│    └── basePage.py <br>
 ├── testData/ <br>
 │    └── testdata.csv <br>
+├── reports/ <br>
+|    └── logs <br>
+|          └── logfile.txt
+|    └── screenshots <br>
 ├── utils/ <br>
 │    └── actions.py <br>
 │    └── attachments.py <br>
 │    └── config_reader.py <br>
-│    └── data_reader.py <br>
+│    └── csv_util.py <br>
 │    └── log_util.py <br>
 ├── behave.ini <br>
 ├── requirements.txt <br>
