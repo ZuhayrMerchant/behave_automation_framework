@@ -8,7 +8,7 @@ folders = [
     "features/steps",
     "pages",
     "reports",
-    "reports/logs"
+    "reports/logs",
     "reports/screenshots",
     "testData",
     "utils"
@@ -513,4 +513,5 @@ def create_structure():
 
 # Run the setup
 if __name__ == "__main__":
+
     create_structure()
