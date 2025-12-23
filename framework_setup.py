@@ -8,7 +8,7 @@ folders = [
     "features/steps",
     "pages",
     "reports",
-    "reports/logs"
+    "reports/logs",
     "reports/screenshots",
     "testData",
     "utils"
