@@ -78,23 +78,34 @@ From the root directory, run:
 ```bash
 behave
 ```
-Modify the base config in config/config.ini:
-```ini
-[DEFAULT]
-base_url = https://example.com
-browser = chrome
+Modify the base config in config/config.yaml:
+```yaml
+env:
+  site_url: "https://google.com/"
+  selenium_url: "http://selenium:4444/wd/hub"
 
-[FILES]
-test_data_csv = testData/testdata.csv
+driver:
+  browser: "chrome"
+
+data:
+  test_data_csv: "testData/testdata.csv"
 ```
-Modify the base config in utils/config_reader.py: (when your modification of config.ini files is completed)
+Modify the base config in utils/config_reader.py: (when your modification of config.yaml files is completed)
 ```python
-config = configparser.ConfigParser()
-config.read("config/config.ini") 
+# File Path
+def _load_config():
+    global config
+    config_path = os.path.join(os.path.dirname(__file__), "..", "config", "config.yaml")
 
-BASE_URL = config["DEFAULT"]["base_url"]
-BROWSER = config["DEFAULT"]["browser"]
-USER_DATA_CSV = config["FILES"]["test_data_csv"]
+# Environment
+SITE_URL = config["env"]["site_url"]
+SELENIUM_URL = config["env"]["selenium_url"]
+
+# Driver
+BROWSER = config["driver"]["browser"]
+
+# Data Files
+TEST_DATA_CSV = config["data"]["testdata_csv"]
 ```
 
 Supported browsers: chrome, firefox, edge (you must install the correct driver manually if not using Chrome).
